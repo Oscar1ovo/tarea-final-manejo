@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos Digitales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda Digital "Don Oscar"</h1>
+        <nav>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        Bienvenidos a mi tienda 
+    </div>
+
+    <div class="container">
+        <div class="filter-container">
+            <label for="category-filter">Filtrar por categoría:</label>
+            <select id="category-filter" onchange="filterByCategory()">
+                <option value="all">Todas</option>
+                <option value="Laptops Gaming">Laptops Gaming</option>
+                <option value="Libros">Libros</option>
+                <option value="Gymnasio">Gymnasio</option>
+                <option value="hot wheels">hot wheels</option>
+                <option value="Musica">Musica</option>
+                <option value="Celulares">Celulares</option>
+            </select>
+        </div>
+
+        <h2 id="productos">Productos Destacados</h2>
+        <div class="product-grid" id="product-grid">
+    
+        </div>
+
+        <h2 id="contacto">¡Contáctenos por cualquier duda!</h2>
+        <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Tu correo electrónico">
+            <textarea rows="4" placeholder="Escribe tu mensaje"></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Tienda Digital "Don Oscar". Todos los derechos reservados.
+    </footer>
+
+    <div id="cart" onclick="viewCart()">🛒</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
